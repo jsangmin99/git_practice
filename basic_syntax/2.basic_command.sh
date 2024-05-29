@@ -11,7 +11,8 @@ git add 파일경로
 # local repository에 반영 및 커밋이력 생성
 git commit -m "메세지타이틀" -m "메세지 내용"
 
-
+# vi 모드에서 작성 : git commit 후 엔터 
+git commit
 
 # commit이력 확인 (local repository의 이력)
 git log
