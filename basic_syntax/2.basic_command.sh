@@ -43,4 +43,15 @@ git checkout 커밋아이디
 git checkout master
 
 # git pull은 원격의 변경사항을 local로 다운로드
-git 
+git pull origin 브렌치명
+
+#git 작업 취소
+# working directory에서의 취소
+git checkout .
+# staging area 에서의 취소
+git reset
+# commit 이후의 취소
+git reset HEAD~1
+git reset HEAD^
+# push 이후의 취소
+git revert 커밋ID
