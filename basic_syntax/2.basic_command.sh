@@ -27,7 +27,17 @@ git log --oneline
 # 전체 이력 조
 git log --all
 
+# 로그를 그래프 형태로 조회
+git log --graph
+
 # 원격저장소로 업로드
 git push origin 브랜치명
 
 # 출돌 무시하고 강제 push
+git push --force
+
+# 특정 commit ID로의 전환
+git checkout 커밋아이디
+
+# 다시 현재의 master 브랜치의 commit로 return
+git checkout master
