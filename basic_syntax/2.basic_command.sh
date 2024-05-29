@@ -47,7 +47,13 @@ git pull origin 브렌치명
 
 #git 작업 취소
 # working directory에서의 취소
+# 수정사항만 취소 새로추가한 파일은 취소안됨
 git checkout .
+# working directory 에서 추가파일 취소
+git clean --fdx
+# 수정 취소 동시에
+git checkout . | git clean --fdx
+
 # staging area 에서의 취소
 git reset
 # commit 이후의 취소
@@ -55,3 +61,13 @@ git reset HEAD~1
 git reset HEAD^
 # push 이후의 취소
 git revert 커밋ID
+
+# 버전별 비교 명령어 : diff
+# A를 기준으로 B가 어떤 변경이 있는지를 비교
+git diff A B
+git diff commitID1 commitID2
+git diff A브랜치 B브랜치
+
+# git fetch
+# 원격에 변경사항을 로컬에 가져오되 병합은 하지 않는 것
+# 비교 : git pull origin
