@@ -87,3 +87,11 @@ git diff A브랜치 B브랜치
 # -> 작업사항 다시 추가해서 -> add, commit push
 # 문제상황 정의 해결
 # git push -> 충돌 실패 -> git pull -> auto merged fail -> 병합 파일 -> 수정후 -> add -> commit -> merge commit
+
+#작업중인 사항을 임시저장
+git stash
+# 저장한 최신의 목록을 꺼내기
+git stash pop
+# 저장한 목록 보기
+git stash list
+git stash list
