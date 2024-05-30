@@ -92,6 +92,9 @@ git diff A브랜치 B브랜치
 git stash
 # 저장한 최신의 목록을 꺼내기
 git stash pop
-# 저장한 목록 보기
+# 저장한 목록은 놔둔채 작업목록 적용
+git stash apply stash@인덱스값
+# 저장한 목록 조회
 git stash list
-git stash list
+# 저장한 작업목록 상세조회
+git stash shwow -p 인덱스
