@@ -71,3 +71,10 @@ git diff A브랜치 B브랜치
 # git fetch
 # 원격에 변경사항을 로컬에 가져오되 병합은 하지 않는 것
 # 비교 : git pull origin
+
+# 2. working directory에서만 작업 && git pull
+# => fetch는 성공, merge -> 어디가 틀렸는지 비교 불가
+# => 해결책 -> add commit -> git merge origin/master
+
+# 3. commit 까지 하고 git pull
+# => fetch 성고 , merge 실패 -> 어디어디 틀렸는지 비교해서 알려줌 => 충돌사항 정리하고 add commit push
