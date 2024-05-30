@@ -85,3 +85,5 @@ git diff A브랜치 B브랜치
 #4
 # git pull -> 에러메세지 1) commit 2)stash -> 작업사항 복사해두고, 취소한 다음에 git pull 
 # -> 작업사항 다시 추가해서 -> add, commit push
+# 문제상황 정의 해결
+# git push -> 충돌 실패 -> git pull -> auto merged fail -> 병합 파일 -> 수정후 -> add -> commit -> merge commit
