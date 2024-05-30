@@ -72,7 +72,8 @@ git diff A브랜치 B브랜치
 # 원격에 변경사항을 로컬에 가져오되 병합은 하지 않는 것
 # 비교 : git pull origin
 # 모든 브랜치정보 fetch
-git fetch
+git fetch --all
+git fetch --all -prune
 
 # 2. working directory에서만 작업 && git pull
 # => fetch는 성공, merge -> 어디가 틀렸는지 비교 불가
@@ -126,6 +127,9 @@ git branch
 
 # 브랜치 생성과 전환 동시에
 git checkout -b 브랜치명
+
+# 브랜치 삭제
+git branch -D 브랜치
 
 # 로컬 브랜치 생성시 주의사항 : 최신화된 main 에서 checkout -b 하라 
 # => git checkout main -> git pull ->gitcheckout-b feature/test
