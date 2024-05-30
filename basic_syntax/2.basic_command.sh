@@ -75,8 +75,13 @@ git diff A브랜치 B브랜치
 # 2. working directory에서만 작업 && git pull
 # => fetch는 성공, merge -> 어디가 틀렸는지 비교 불가
 # => 해결책 -> add commit -> git merge origin/master
+
 # 내 로컬 변경 commit까지 test2 && 원격변경 commit test1
 # git push origin master -> 에러 -> git fetch -> diff -> fit pull
 
 # 3. commit 까지 하고 git pull
-# => fetch 성고 , merge 실패 -> 어디어디 틀렸는지 비교해서 알려줌 => 충돌사항 정리하고 add commit push
+# => fetch 성공 , merge 실패 -> 어디어디 틀렸는지 비교해서 알려줌 => 충돌사항 정리하고 add commit push
+
+#4
+# git pull -> 에러메세지 1) commit 2)stash -> 작업사항 복사해두고, 취소한 다음에 git pull 
+# -> 작업사항 다시 추가해서 -> add, commit push
